@@ -2,6 +2,7 @@ var webpackConfig = require('./webpack.config.js');
 
 module.exports = function (config) {
   config.set({
+    webpack: webpackConfig,
     basePath: './',
     browsers: ['Chrome'],
     singleRun: true,
@@ -16,7 +17,6 @@ module.exports = function (config) {
         timeout: '5000'
       }
     },
-    webpack: webpackConfig,
     webpackServer: {
       noInfo: true
     }
